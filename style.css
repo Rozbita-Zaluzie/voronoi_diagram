@@ -131,3 +131,30 @@ footer {
     background-color: rgba(29, 250, 0, 0.849);
     border-color: rgba(29, 250, 0, 0.849);
 }
+
+#desktopOnly {
+    display: none;
+}
+
+@media only screen and (max-width: 1356px) {
+    #desktopOnly {
+        display: block;
+        position: fixed;
+        font-size: 40px;
+        font-weight: 700;
+        top: 25%;
+        left: 34%;
+
+        text-shadow: 1px 1px 3px #000000af;
+    }
+
+
+    section {
+        display: none;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
