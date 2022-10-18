@@ -9,9 +9,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script>
     <script src="https://rawgit.com/gorhill/Javascript-Voronoi/master/rhill-voronoi-core.js"></script>
-    <script type="text/javascript" canvas="myCanvas" src="index.js"></script>
+    <script type="text/javascript" canvas="myCanvas" src="{{ url_for('static',filename='scripts/index.js') }}"></script>
 
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/524d8b0195.js" crossorigin="anonymous"></script>

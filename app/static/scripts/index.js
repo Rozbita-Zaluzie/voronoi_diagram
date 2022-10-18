@@ -46,6 +46,10 @@ function newDiagramButton() {
   
   var points = document.getElementById("pointsInDiagram").value;
 
+  if (points == "") {
+    points = 50;
+  } 
+
   if (points < 2) {
     points = 2;
     document.getElementById("pointsInDiagram").value = 2;
@@ -53,10 +57,6 @@ function newDiagramButton() {
     points = 1500;
     document.getElementById("pointsInDiagram").value = 1500;
   }
-
-  if (points == "") {
-    points = 50;
-  } 
 
   centroPoints = drawVoronoi(calcVoronoi(points=points))
 }
