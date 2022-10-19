@@ -185,8 +185,8 @@ function drawVoronoi(diagram) {
 
         // visualizing centroid
         var shape = new paper.Shape.Circle(new paper.Point(pointX, pointY), 5);
-        shape.strokeColor = 'blue';
-
+        shape.strokeColor = 'grey';
+        
         
     });
 
